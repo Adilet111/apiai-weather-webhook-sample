@@ -34,7 +34,7 @@ def webhook():
 
 
 def processRequest(req):
-    if req.get("result").get("action") != "createCheckBook":
+    if req.get("queryResult").get("action") != "createCheckBook":
         return {}
     baseurl = "https://ldcif6u.wdf.sap.corp:44304/sap/opu/odata/sap/ZIVRC_SRV/WorkItems("
     print(baseurl)
